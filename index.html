@@ -1,1 +1,484 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Pritam Gajbhiye — Data Scientist | ML, NLP, Time Series | Portfolio" />
+  <title>Pritam Gajbhiye | Portfolio</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Icons -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Top progress bar -->
+  <div class="progress" id="progress"></div>
+
+  <!-- Header / Nav -->
+  <header class="header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-dot"></span>
+        <span>Pritam Gajbhiye</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#certs">Certifications</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" title="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <div class="container">
+        <a href="#about" class="m-link">About</a>
+        <a href="#experience" class="m-link">Experience</a>
+        <a href="#projects" class="m-link">Projects</a>
+        <a href="#skills" class="m-link">Skills</a>
+        <a href="#certs" class="m-link">Certifications</a>
+        <a href="#awards" class="m-link">Awards</a>
+        <a href="#contact" class="m-link">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / ABOUT -->
+    <section class="section hero" id="about">
+      <div class="container grid-2">
+        <div class="hero-left reveal">
+          <p class="eyebrow">Data Scientist • Applied ML • NLP • Time Series</p>
+          <h1 class="title">
+            Building practical, high-impact data products —
+            <span class="grad">from pipelines to models to insights.</span>
+          </h1>
+
+          <p class="subtitle">
+            I work across applied machine learning, retrieval-augmented generation (RAG), forecasting, and analytics at scale.
+            Recently: Snowflake/Matillion ETL + governance in public-sector data, RAG chatbots over PDF documents, and deep learning for spatiotemporal forecasting.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="assets/resume.pdf" target="_blank" rel="noopener">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              Resume
+            </a>
+            <a class="btn" href="https://linkedin.com/in/pritam-gajbhiye" target="_blank" rel="noopener">
+              <i class="fa-brands fa-linkedin"></i>
+              LinkedIn
+            </a>
+            <a class="btn" href="https://github.com/Pritam0705" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i>
+              GitHub
+            </a>
+            <a class="btn" href="mailto:pgajbhiye2405@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              Email
+            </a>
+          </div>
+
+          <div class="mini-cards">
+            <div class="mini-card">
+              <div class="mini-k">Focus</div>
+              <div class="mini-v">LLMs/RAG • NLP • Forecasting • Analytics</div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-k">Stack</div>
+              <div class="mini-v">Python • SQL • Snowflake • Spark • AWS • Power BI</div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-k">Location</div>
+              <div class="mini-v">Chicago, IL</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right reveal">
+          <div class="avatar-card">
+            <!-- Put your photo at assets/profile.jpg -->
+            <img class="avatar" src="assets/profile.jpg" alt="Profile photo of Pritam Gajbhiye" />
+            <div class="avatar-meta">
+              <div class="name">Pritam Gajbhiye</div>
+              <div class="role">Data Scientist</div>
+              <div class="social">
+                <a class="s-ic" href="https://linkedin.com/in/pritam-gajbhiye" target="_blank" rel="noopener" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a class="s-ic" href="https://github.com/Pritam0705" target="_blank" rel="noopener" aria-label="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a class="s-ic" href="mailto:pgajbhiye2405@gmail.com" aria-label="Email">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="quote-card">
+            <p>
+              “I like projects that combine real-world constraints with strong modeling —
+              building systems people can actually use.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / TIMELINE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Experience</h2>
+          <p class="muted">A snapshot of roles and key work — shown as a simple, graphic timeline.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="t-top">
+                <div>
+                  <h3>Data Analyst</h3>
+                  <div class="t-sub">Cook County Government • Chicago, IL</div>
+                </div>
+                <div class="t-date">Aug 2025 – Present</div>
+              </div>
+              <ul>
+                <li>Built Matillion + Snowflake ETL pipelines (Oracle → curated models) with quality and governance controls.</li>
+                <li>Used ML/LLM-based NLP to extract features from procurement PDFs for automation and improved data quality.</li>
+                <li>Developed Power BI dashboards for procurement trends, spend analytics, and transparency reporting.</li>
+              </ul>
+              <div class="tags">
+                <span>Snowflake</span><span>Matillion</span><span>LLMs</span><span>Power BI</span><span>Governance</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="t-top">
+                <div>
+                  <h3>Research Assistant – Data Scientist</h3>
+                  <div class="t-sub">UChicago Booth School of Business • Chicago, IL</div>
+                </div>
+                <div class="t-date">Aug 2024 – Jun 2025</div>
+              </div>
+              <ul>
+                <li>Analyzed Chicago 311 service requests to evaluate housing policy impacts using Python.</li>
+                <li>Applied time-series + spatial analytics (R) to identify neighborhood trends and policy outcomes.</li>
+                <li>Built a RAG system + chatbot over property tax PDFs using embeddings + vector database + GPT.</li>
+              </ul>
+              <div class="tags">
+                <span>Python</span><span>R</span><span>RAG</span><span>Embeddings</span><span>Spatial</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="t-top">
+                <div>
+                  <h3>Data Scientist</h3>
+                  <div class="t-sub">Labhanya Infotech • Nagpur, India</div>
+                </div>
+                <div class="t-date">Feb 2022 – Jul 2023</div>
+              </div>
+              <ul>
+                <li>Built ETL pipelines (Snowflake, AWS Glue, PySpark) to support analytics and ML workloads.</li>
+                <li>Optimized Snowflake performance and automated refresh workflows to improve reliability and latency.</li>
+                <li>Applied ML/statistical analysis (forecasting, A/B testing, optimization) to drive business insights.</li>
+              </ul>
+              <div class="tags">
+                <span>Snowflake</span><span>AWS</span><span>PySpark</span><span>Forecasting</span><span>A/B Testing</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="t-top">
+                <div>
+                  <h3>Data Scientist (CO-OP)</h3>
+                  <div class="t-sub">Pacific Northwest National Laboratory • Richland, WA</div>
+                </div>
+                <div class="t-date">May 2021 – Dec 2021</div>
+              </div>
+              <ul>
+                <li>Built GCNN + LSTM models for spatiotemporal forecasting with 90%+ accuracy.</li>
+                <li>Benchmarked deep learning vs baselines (Prophet, N-BEATS, RF) and improved performance ~10%.</li>
+                <li>Developed end-to-end time-series pipelines for forecasting and anomaly detection.</li>
+              </ul>
+              <div class="tags">
+                <span>GNN</span><span>LSTM</span><span>Time Series</span><span>Anomaly Detection</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Projects</h2>
+          <p class="muted">A few projects that show depth across ML, LLMs, and analytics engineering.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Project filters">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="llm">LLM / RAG</button>
+          <button class="chip" data-filter="ts">Time Series</button>
+          <button class="chip" data-filter="analytics">Analytics</button>
+        </div>
+
+        <div class="cards" id="projectGrid">
+          <article class="card reveal" data-tags="llm analytics">
+            <div class="card-top">
+              <h3>RAG Chatbot for Property Tax PDFs</h3>
+              <span class="pill">LLM / RAG</span>
+            </div>
+            <p class="muted">
+              Search, summarize, and extract structured signals from unstructured PDFs using embeddings + retrieval + LLM responses.
+            </p>
+            <div class="meta">
+              <span>Python</span><span>Embeddings</span><span>Vector DB</span><span>GPT</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/Pritam0705" target="_blank" rel="noopener">Repo</a>
+              <a href="#" target="_blank" rel="noopener">Write-up</a>
+            </div>
+          </article>
+
+          <article class="card reveal" data-tags="ts">
+            <div class="card-top">
+              <h3>GCNN + LSTM Spatiotemporal Forecasting</h3>
+              <span class="pill">Time Series</span>
+            </div>
+            <p class="muted">
+              Forecasted curbside parking availability using graph + sequence modeling; benchmarked against strong baselines.
+            </p>
+            <div class="meta">
+              <span>GNN</span><span>LSTM</span><span>Prophet</span><span>N-BEATS</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/Pritam0705" target="_blank" rel="noopener">Repo</a>
+              <a href="#" target="_blank" rel="noopener">Write-up</a>
+            </div>
+          </article>
+
+          <article class="card reveal" data-tags="analytics llm">
+            <div class="card-top">
+              <h3>Procurement Analytics + PDF Feature Extraction</h3>
+              <span class="pill">Analytics</span>
+            </div>
+            <p class="muted">
+              ETL + governance + dashboards for procurement reporting; automated extraction from procurement PDFs with NLP/LLMs.
+            </p>
+            <div class="meta">
+              <span>Snowflake</span><span>Matillion</span><span>Power BI</span><span>NLP</span>
+            </div>
+            <div class="links">
+              <a href="#" target="_blank" rel="noopener">Notes</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Skills</h2>
+          <p class="muted">Core tools and methods I use regularly.</p>
+        </div>
+
+        <div class="skill-grid reveal">
+          <div class="panel">
+            <h3>Machine Learning</h3>
+            <div class="chips">
+              <span>Statistical Modeling</span><span>Feature Engineering</span><span>A/B Testing</span><span>Model Evaluation</span>
+              <span>Clustering</span><span>PCA</span>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3>NLP / LLMs</h3>
+            <div class="chips">
+              <span>NLP</span><span>Transformers</span><span>BERT</span><span>Text Classification</span><span>RAG</span>
+              <span>Embeddings</span><span>Vector Databases</span><span>spaCy</span><span>NLTK</span>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3>Time Series</h3>
+            <div class="chips">
+              <span>Time Series Analysis</span><span>LSTM</span><span>N-BEATS</span><span>ARIMA</span><span>Prophet</span>
+              <span>Anomaly Detection</span>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3>Data & Platforms</h3>
+            <div class="chips">
+              <span>Python</span><span>R</span><span>SQL</span><span>PySpark</span><span>Snowflake</span>
+              <span>AWS</span><span>Power BI</span><span>GitHub</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section" id="certs">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Certifications</h2>
+          <p class="muted">Selected coursework and professional certifications.</p>
+        </div>
+
+        <div class="list reveal">
+          <div class="list-item">
+            <div class="li-left">
+              <h3>MITx MicroMasters — Statistics & Data Science</h3>
+              <p class="muted">Probability, inference, ML foundations, applied modeling.</p>
+            </div>
+            <div class="li-right">Credential</div>
+          </div>
+
+          <div class="list-item">
+            <div class="li-left">
+              <h3>HarvardX — Professional Certificate in Data Science</h3>
+              <p class="muted">Data wrangling, modeling, visualization, inference.</p>
+            </div>
+            <div class="li-right">Credential</div>
+          </div>
+
+          <div class="list-item">
+            <div class="li-left">
+              <h3>Johns Hopkins — Data Science Math Skills</h3>
+              <p class="muted">Linear algebra, calculus, probability basics for DS.</p>
+            </div>
+            <div class="li-right">Credential</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AWARDS -->
+    <section class="section" id="awards">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Awards</h2>
+          <p class="muted">Recognition and scholarships.</p>
+        </div>
+
+        <div class="list reveal">
+          <div class="list-item">
+            <div class="li-left">
+              <h3>Maroon Research Scholarship</h3>
+              <p class="muted">$37,000 (Aug 2024 – May 2025)</p>
+            </div>
+            <div class="li-right">UChicago</div>
+          </div>
+
+          <div class="list-item">
+            <div class="li-left">
+              <h3>Maroon Research Scholarship</h3>
+              <p class="muted">$30,000 (Aug 2023 – May 2024)</p>
+            </div>
+            <div class="li-right">UChicago</div>
+          </div>
+
+          <div class="list-item">
+            <div class="li-left">
+              <h3>National Overseas Scholarship (Govt. of India)</h3>
+              <p class="muted">Awarded to 75 students; tuition + $15,400/year allowance</p>
+            </div>
+            <div class="li-right">GOI</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div>
+            <h2>Let’s connect</h2>
+            <p class="muted">
+              If you’re hiring for Data Scientist / Applied DS / Analytics roles, I’d love to chat.
+              The fastest way to reach me is email or LinkedIn.
+            </p>
+            <div class="cta-row">
+              <a class="btn primary" href="mailto:pgajbhiye2405@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+              <a class="btn" href="https://linkedin.com/in/pritam-gajbhiye" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+              <a class="btn" href="https://github.com/Pritam0705" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a class="btn" href="assets/resume.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file"></i> Resume</a>
+            </div>
+          </div>
+          <div class="contact-side">
+            <div class="contact-mini">
+              <div class="muted">Location</div>
+              <div>Chicago, IL, USA</div>
+            </div>
+            <div class="contact-mini">
+              <div class="muted">Email</div>
+              <div><a href="mailto:pgajbhiye2405@gmail.com">pgajbhiye2405@gmail.com</a></div>
+            </div>
+            <div class="contact-mini">
+              <div class="muted">Links</div>
+              <div class="social">
+                <a class="s-ic" href="https://linkedin.com/in/pritam-gajbhiye" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="s-ic" href="https://github.com/Pritam0705" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a class="s-ic" href="mailto:pgajbhiye2405@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="foot-left">
+        <div class="muted">© <span id="year"></span> Pritam Gajbhiye • Chicago, IL</div>
+        <div class="muted small">Built on GitHub Pages • Simple, fast, and recruiter-friendly</div>
+      </div>
+      <div class="foot-right">
+        <a class="s-ic" href="https://linkedin.com/in/pritam-gajbhiye" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a class="s-ic" href="https://github.com/Pritam0705" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a class="s-ic" href="mailto:pgajbhiye2405@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a class="s-ic" href="assets/resume.pdf" target="_blank" rel="noopener" aria-label="Resume"><i class="fa-solid fa-file"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
