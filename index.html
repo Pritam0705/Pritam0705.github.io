@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Pritam Gajbhiye — Data Scientist & ML Engineer | Portfolio" />
+  <title>Pritam Gajbhiye | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <header class="nav-header" id="navHeader">
+    <div class="nav-container">
+      <a class="nav-logo" href="#top">
+        <span class="logo-mark">PG</span>
+        <span class="logo-text">Pritam Gajbhiye</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <a class="nav-cta" href="assets/Pritam_Gajbhiye_Resume.pdf" target="_blank" rel="noopener">
+          <i class="fa-solid fa-arrow-down"></i> Resume
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO / ABOUT ==================== -->
+    <section class="hero" id="about">
+      <div class="container">
+        <div class="hero-layout">
+          <div class="hero-content reveal">
+            <div class="hero-label">
+              <span class="label-dot"></span>
+              Data Scientist &bull; ML Engineer &bull; Chicago, IL
+            </div>
+
+            <h1 class="hero-title">
+              I build data systems that<br>
+              <span class="hero-accent">actually ship.</span>
+            </h1>
+
+            <div class="hero-summary">
+              <p>
+                I'm Pritam — a data scientist with 4+ years of experience building machine learning systems,
+                NLP pipelines, and GenAI applications that move from prototype to production. My work spans
+                government analytics, academic research, and enterprise data engineering.
+              </p>
+              <p>
+                At <strong>Cook County Government</strong>, I'm modernizing how a $2B+ procurement system
+                operates — building ETL pipelines, deploying LLM-based extraction on thousands of unstructured
+                PDFs, and putting governance standards in place across departments. Before that, at
+                <strong>UChicago Booth</strong>, I built a RAG system over property tax documents and ran
+                causal inference studies on a million 311 service requests to measure the real impact of
+                housing policy.
+              </p>
+              <p>
+                I studied Computational Social Science at UChicago and Computer Science at IIT Chicago.
+                My research interests sit at the intersection of ML, social networks, and public policy —
+                I care about building tools that are rigorous <em>and</em> useful. When I'm not modeling,
+                I'm probably benchmarking a new architecture or figuring out why my Snowflake query is slow.
+              </p>
+            </div>
+
+            <div class="hero-actions">
+              <a class="btn-primary" href="mailto:pgajbhiye2405@gmail.com">
+                <i class="fa-solid fa-envelope"></i> Get in touch
+              </a>
+              <a class="btn-outline" href="https://linkedin.com/in/pritam-gajbhiye" target="_blank" rel="noopener">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+              </a>
+              <a class="btn-outline" href="https://github.com/Pritam0705" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat">
+                <div class="stat-num">4+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">6</div>
+                <div class="stat-label">Organizations</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">2</div>
+                <div class="stat-label">Master's Degrees</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-side reveal">
+            <div class="profile-card">
+              <div class="profile-img-wrap">
+                <img class="profile-img" src="assets/profile.png" alt="Pritam Gajbhiye" />
+                <div class="profile-status">
+                  <span class="status-dot"></span> Open to opportunities
+                </div>
+              </div>
+              <div class="profile-info">
+                <h2 class="profile-name">Pritam Gajbhiye</h2>
+                <p class="profile-role">Data Scientist &amp; ML Engineer</p>
+                <div class="profile-tags">
+                  <span>LLMs / RAG</span>
+                  <span>Time Series</span>
+                  <span>NLP</span>
+                  <span>Causal Inference</span>
+                  <span>Data Engineering</span>
+                </div>
+                <div class="profile-links">
+                  <a href="https://linkedin.com/in/pritam-gajbhiye" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://github.com/Pritam0705" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                  <a href="mailto:pgajbhiye2405@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                  <a href="assets/Pritam_Gajbhiye_Resume.pdf" target="_blank" rel="noopener" aria-label="Resume"><i class="fa-solid fa-file-lines"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="research-card reveal">
+              <div class="research-label">Research Interests</div>
+              <p>Computational social science, social network analysis, misinformation detection, behavioral data science, and ML applications in education &amp; healthcare.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE — HORIZONTAL TIMELINE ==================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Career</span>
+          <h2 class="section-title">Experience</h2>
+          <p class="section-subtitle">From national labs to government — building data systems at every scale.</p>
+        </div>
+
+        <div class="h-timeline reveal">
+          <!-- The horizontal axis line -->
+          <div class="h-timeline-line"></div>
+
+          <!-- Item 1 — ABOVE -->
+          <div class="h-timeline-item above" style="left: 2%">
+            <div class="h-card">
+              <div class="h-card-header">
+                <span class="h-date">May 2021 – Dec 2021</span>
+              </div>
+              <h3>Data Scientist CO-OP</h3>
+              <p class="h-org">Pacific Northwest National Laboratory</p>
+              <p class="h-loc">Richland, WA</p>
+              <ul class="h-details">
+                <li>Built GCNN + LSTM models for spatiotemporal parking forecasting (90%+ accuracy)</li>
+                <li>Benchmarked 6 DL architectures against classical baselines; improved performance ~10%</li>
+                <li>End-to-end ML pipelines for time-series prediction and anomaly detection for DOE</li>
+              </ul>
+              <div class="h-tags">
+                <span>GNN</span><span>LSTM</span><span>Time Series</span><span>TensorFlow</span>
+              </div>
+            </div>
+            <div class="h-connector"></div>
+            <div class="h-dot"></div>
+          </div>
+
+          <!-- Item 2 — BELOW -->
+          <div class="h-timeline-item below" style="left: 26%">
+            <div class="h-dot"></div>
+            <div class="h-connector"></div>
+            <div class="h-card">
+              <div class="h-card-header">
+                <span class="h-date">Feb 2022 – Jul 2023</span>
+              </div>
+              <h3>Data Scientist</h3>
+              <p class="h-org">Labhanya Infotech</p>
+              <p class="h-loc">Nagpur, India</p>
+              <ul class="h-details">
+                <li>Architected data pipelines processing 500GB+ daily (Snowflake, AWS Glue, PySpark)</li>
+                <li>Automated 70% of pipeline orchestration; improved data freshness from 24h to 6h</li>
+                <li>Built predictive models + A/B testing driving 12% conversion increase</li>
+              </ul>
+              <div class="h-tags">
+                <span>Snowflake</span><span>AWS</span><span>PySpark</span><span>A/B Testing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 — ABOVE -->
+          <div class="h-timeline-item above" style="left: 50%">
+            <div class="h-card">
+              <div class="h-card-header">
+                <span class="h-date">Aug 2024 – Jun 2025</span>
+              </div>
+              <h3>Research Assistant — Data Scientist</h3>
+              <p class="h-org">UChicago Booth School of Business</p>
+              <p class="h-loc">Chicago, IL</p>
+              <ul class="h-details">
+                <li>Causal inference on 1M+ 311 requests to measure housing policy impact</li>
+                <li>Built production RAG system (LangChain + Qdrant + GPT-4o) over 5K+ tax PDFs</li>
+                <li>Time-series & spatial analytics in R across 77 community areas</li>
+              </ul>
+              <div class="h-tags">
+                <span>RAG</span><span>Causal Inference</span><span>Python</span><span>R</span>
+              </div>
+            </div>
+            <div class="h-connector"></div>
+            <div class="h-dot"></div>
+          </div>
+
+          <!-- Item 4 — BELOW (current) -->
+          <div class="h-timeline-item below current" style="left: 74%">
+            <div class="h-dot">
+              <span class="pulse"></span>
+            </div>
+            <div class="h-connector"></div>
+            <div class="h-card">
+              <div class="h-card-header">
+                <span class="h-date">Aug 2025 – Present</span>
+                <span class="h-badge">Current</span>
+              </div>
+              <h3>Data Analyst / Applied Data Fellow</h3>
+              <p class="h-org">Cook County Government</p>
+              <p class="h-loc">Chicago, IL</p>
+              <ul class="h-details">
+                <li>ETL pipelines (Matillion + Snowflake) for Oracle procurement data; 45% efficiency gain</li>
+                <li>LLM-based NLP on 10K+ procurement PDFs; 60% reduction in manual entry</li>
+                <li>Power BI dashboards monitoring $2B+ procurement spend for executive stakeholders</li>
+              </ul>
+              <div class="h-tags">
+                <span>Snowflake</span><span>LLMs</span><span>Power BI</span><span>Governance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic Experience — compact list -->
+        <div class="academic-section reveal">
+          <h3 class="subsection-title">Academic &amp; Research Roles</h3>
+          <div class="academic-grid">
+            <div class="academic-item">
+              <div class="ac-role">Teaching Assistant — Big Data &amp; HPC</div>
+              <div class="ac-org">University of Chicago</div>
+              <div class="ac-date">Mar – May 2025</div>
+            </div>
+            <div class="academic-item">
+              <div class="ac-role">Research Assistant — Social Network Analysis</div>
+              <div class="ac-org">University of Chicago</div>
+              <div class="ac-date">Jun – Aug 2024</div>
+            </div>
+            <div class="academic-item">
+              <div class="ac-role">Research Assistant — Political Polarization</div>
+              <div class="ac-org">Illinois Institute of Technology</div>
+              <div class="ac-date">Aug – Dec 2021</div>
+            </div>
+            <div class="academic-item">
+              <div class="ac-role">Research Assistant — Socioeconomics &amp; GIS</div>
+              <div class="ac-org">UMass Amherst (Remote)</div>
+              <div class="ac-date">May – Jul 2020</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS (STAR FORMAT) ==================== -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Work</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Selected work showing depth across LLMs, forecasting, and applied analytics.</p>
+        </div>
+
+        <div class="project-filters reveal">
+          <button class="filter-chip active" data-filter="all">All</button>
+          <button class="filter-chip" data-filter="llm">LLM / RAG</button>
+          <button class="filter-chip" data-filter="ts">Time Series</button>
+          <button class="filter-chip" data-filter="analytics">Analytics</button>
+          <button class="filter-chip" data-filter="nlp">NLP / CV</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- Project 1 -->
+          <article class="project-card reveal" data-tags="llm">
+            <div class="project-number">01</div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>RAG System for Property Tax Documents</h3>
+                <span class="project-pill">LLM / RAG</span>
+              </div>
+              <div class="star-grid">
+                <div class="star-block">
+                  <div class="star-label">Situation</div>
+                  <p>Researchers at UChicago Booth needed to query 5,000+ property tax PDFs for policy analysis — a process that took weeks of manual review per research question.</p>
+                </div>
+                <div class="star-block">
+                  <div class="star-label">Task</div>
+                  <p>Design a system that lets researchers ask natural language questions and get accurate, sourced answers from the full document corpus.</p>
+                </div>
+                <div class="star-block">
+                  <div class="star-label">Approach</div>
+                  <p>Built a RAG pipeline using LangChain for orchestration, Qdrant as vector store for document embeddings, and GPT-4o for generation with prompt engineering for citation accuracy.</p>
+                </div>
+                <div class="star-block">
+                  <div class="star-label">Result</div>
+                  <p>Reduced manual research effort by 80%. Researchers could query the full corpus in seconds, accelerating policy analysis cycles from weeks to hours.</p>
+                </div>
+              </div>
+              <div class="project-meta">
+                <span>Python</span><span>LangChain</span><span>Qdrant</span><span>GPT-4o</span><span>Embeddings</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Pritam0705" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal" data-tags="ts">
+            <div class="project-number">02</div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>Spatiotemporal Parking Forecasting (PNNL)</h3>
+                <span class="project-pill">Time Series</span>
+              </div>
+              <div class="star-grid">
+                <div class="star-block">
+                  <div class="star-label">Situation</div>
+                  <p>The Department of Energy needed accurate curbside parking availability predictions for smart city mobility planning — existing models couldn't capture spatial dependencies between adjacent streets.</p>
+                </div>
+                <div class="star-block">
+                  <div class="star-label">Task</div>
+                  <p>Develop a forecasting framework that models both temporal patterns and spatial relationships in parking occupancy data.</p>
+                </div>
+                <div class="star-block">
+                  <div class="star-label">Approach</div>
+                  <p>Designed a hybrid GCNN + LSTM architecture to capture spatial graph structure and temporal sequences. Benchmarked against 6 baselines including Prophet, N-BEATS, and Random Forest.</p>
+                </div>
+                <div class="star-block">
+                  <div class="star-label">Result</div>
+                  <p>Achieved 90%+ prediction accuracy, outperforming the best baseline by ~10%. Delivered findings to DOE stakeholders for mobility planning integration.</p>
+                </div>
+              </div>
+              <div class="project-meta">
+                <span>TensorFlow</span><span>GCNN</span><span>LSTM</span><span>Prophet</span><span>N-BEATS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Pritam0705" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal" data-tags="llm analytics">
+            <div class="project-number">03</div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>Procurement Analytics &amp; LLM Extraction</h3>
+                <span class="project-pill">LLM + Analytics</span>
+              </div>
+              <div class="star-grid">
+                <div class="star-block">
+                  <div class="star-label">Situation</div>
+                  <p>Cook County's $2B+ procurement system relied on manual data entry from thousands of unstructured PDFs, with no centralized governance or reporting standards.</p>
+                </div>
+                <div class="star-block">
+                  <div class="star-label">Task</div>
+                  <p>Automate data extraction, establish governance standards, and build executive dashboards for procurement spend transparency.</p>
+                </div>
+                <div class="star-block">
+                  <div class="star-label">Approach</div>
+                  <p>Built Matillion + Snowflake ETL pipelines for Oracle data. Deployed LLM-based NLP with prompt engineering to extract structured features from 10K+ PDFs. Designed Power BI dashboards.</p>
+                </div>
+                <div class="star-block">
+                  <div class="star-label">Result</div>
+                  <p>45% improvement in data processing efficiency. 60% reduction in manual data entry. Governance standards adopted across 3 departments.</p>
+                </div>
+              </div>
+              <div class="project-meta">
+                <span>Snowflake</span><span>Matillion</span><span>LLMs</span><span>Power BI</span><span>NLP</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card reveal" data-tags="ts analytics">
+            <div class="project-number">04</div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>Stocklysis — Anomaly Detection &amp; Multi-Agent Trading</h3>
+                <span class="project-pill">Time Series</span>
+              </div>
+              <div class="star-grid">
+                <div class="star-block">
+                  <div class="star-label">Situation</div>
+                  <p>Built at Hacklytics Hackathon 2025 — traders need fast anomaly detection in stock time-series data with explainable recommendations, not just raw signals.</p>
+                </div>
+                <div class="star-block">
+                  <div class="star-label">Task</div>
+                  <p>Create a web app that detects anomalies in stock data and generates actionable buy/sell/hold recommendations with reasoning.</p>
+                </div>
+                <div class="star-block">
+                  <div class="star-label">Approach</div>
+                  <p>Used LSTM models for anomaly detection on time-series data. Designed a multi-agent framework where agents investigate anomalies at specific timestamps and auto-generate reports.</p>
+                </div>
+                <div class="star-block">
+                  <div class="star-label">Result</div>
+                  <p>Delivered a working prototype with real-time visualization and automated reporting. Agents produce contextualized trading recommendations with full reasoning chains.</p>
+                </div>
+              </div>
+              <div class="project-meta">
+                <span>LSTM</span><span>Multi-Agent</span><span>Streamlit</span><span>Python</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Pritam0705" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card reveal" data-tags="ts">
+            <div class="project-number">05</div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>Energy Demand Forecasting for EV Stations</h3>
+                <span class="project-pill">Time Series</span>
+              </div>
+              <div class="star-grid">
+                <div class="star-block">
+                  <div class="star-label">Situation</div>
+                  <p>EV charging stations needed accurate energy demand forecasts to optimize resource allocation and estimate GHG savings.</p>
+                </div>
+                <div class="star-block">
+                  <div class="star-label">Task</div>
+                  <p>Compare forecasting approaches and identify the best model for granular energy consumption prediction.</p>
+                </div>
+                <div class="star-block">
+                  <div class="star-label">Approach</div>
+                  <p>Evaluated tree-based models (RF: 72.3%), linear models (64%), and deep learning. Tested N-BEATS and LSTM for temporal dependency capture.</p>
+                </div>
+                <div class="star-block">
+                  <div class="star-label">Result</div>
+                  <p>LSTM achieved 22% MAPE, N-BEATS 28.9% — both significantly outperformed baselines, validating deep learning for granular energy forecasting.</p>
+                </div>
+              </div>
+              <div class="project-meta">
+                <span>N-BEATS</span><span>LSTM</span><span>Random Forest</span><span>Python</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card reveal" data-tags="nlp">
+            <div class="project-number">06</div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>BERT Text Classification — Native Language ID</h3>
+                <span class="project-pill">NLP</span>
+              </div>
+              <div class="star-grid">
+                <div class="star-block">
+                  <div class="star-label">Situation</div>
+                  <p>Needed to predict authors' native languages from their English writing — a challenging NLP task requiring deep contextual understanding of writing patterns.</p>
+                </div>
+                <div class="star-block">
+                  <div class="star-label">Task</div>
+                  <p>Build a text classification model that leverages contextual embeddings rather than surface-level features.</p>
+                </div>
+                <div class="star-block">
+                  <div class="star-label">Approach</div>
+                  <p>Used BERT embeddings for contextualized vector representation, then trained a Logistic Regression classifier on top for efficient, interpretable prediction.</p>
+                </div>
+                <div class="star-block">
+                  <div class="star-label">Result</div>
+                  <p>Achieved 87.67% accuracy — competitive with heavier architectures while maintaining interpretability through the LR classification layer.</p>
+                </div>
+              </div>
+              <div class="project-meta">
+                <span>BERT</span><span>NLP</span><span>scikit-learn</span><span>Python</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Pritam0705" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Toolkit</span>
+          <h2 class="section-title">Skills</h2>
+          <p class="section-subtitle">Core tools and methods I use in production, research, and prototyping.</p>
+        </div>
+
+        <div class="skills-grid reveal">
+          <div class="skill-panel">
+            <div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>ML &amp; Statistics</h3>
+            <div class="skill-tags">
+              <span>Predictive Modeling</span><span>Causal Inference</span><span>A/B Testing</span>
+              <span>Feature Engineering</span><span>SHAP / LIME</span><span>PCA</span>
+              <span>Clustering</span><span>Anomaly Detection</span>
+            </div>
+          </div>
+
+          <div class="skill-panel">
+            <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>Deep Learning</h3>
+            <div class="skill-tags">
+              <span>LSTM</span><span>GCNN</span><span>Transformers</span><span>BERT</span>
+              <span>N-BEATS</span><span>CNN</span><span>TensorFlow</span><span>PyTorch</span>
+            </div>
+          </div>
+
+          <div class="skill-panel">
+            <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+            <h3>GenAI &amp; NLP</h3>
+            <div class="skill-tags">
+              <span>RAG</span><span>LLM Fine-tuning</span><span>Prompt Engineering</span>
+              <span>LangChain</span><span>Hugging Face</span><span>spaCy</span>
+              <span>Vector DBs (Qdrant, Pinecone)</span>
+            </div>
+          </div>
+
+          <div class="skill-panel">
+            <div class="skill-icon"><i class="fa-solid fa-cloud"></i></div>
+            <h3>Cloud &amp; MLOps</h3>
+            <div class="skill-tags">
+              <span>AWS (EC2, S3, SageMaker, Glue, Lambda)</span>
+              <span>Snowflake</span><span>Docker</span><span>MLflow</span>
+              <span>Airflow</span><span>CI/CD</span><span>PySpark</span>
+            </div>
+          </div>
+
+          <div class="skill-panel">
+            <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Data Engineering</h3>
+            <div class="skill-tags">
+              <span>ETL Pipeline Design</span><span>Data Governance</span>
+              <span>SQL (PostgreSQL, MySQL)</span><span>Data Quality</span>
+              <span>Pipeline Orchestration</span>
+            </div>
+          </div>
+
+          <div class="skill-panel">
+            <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Languages &amp; Viz</h3>
+            <div class="skill-tags">
+              <span>Python</span><span>R</span><span>SQL</span><span>PySpark</span>
+              <span>Power BI</span><span>Tableau</span><span>Streamlit</span><span>Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION ==================== -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Background</span>
+          <h2 class="section-title">Education &amp; Recognition</h2>
+        </div>
+
+        <div class="edu-grid reveal">
+          <div class="edu-card">
+            <div class="edu-degree">MA</div>
+            <div class="edu-details">
+              <h3>Computational Social Science</h3>
+              <p class="edu-school">University of Chicago</p>
+              <p class="edu-date">Aug 2023 – Jun 2025</p>
+            </div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-degree">MS</div>
+            <div class="edu-details">
+              <h3>Computer Science</h3>
+              <p class="edu-school">Illinois Institute of Technology</p>
+              <p class="edu-date">Jan 2020 – Dec 2021</p>
+              <p class="edu-note">Specialization: Data Analytics &amp; Computational Intelligence</p>
+            </div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-degree">BTech</div>
+            <div class="edu-details">
+              <h3>Information Technology</h3>
+              <p class="edu-school">Dr. B. A. Technological University</p>
+              <p class="edu-date">Aug 2014 – May 2018</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Awards & Certs -->
+        <div class="awards-certs-grid reveal">
+          <div class="ac-block">
+            <h3 class="subsection-title">Awards &amp; Scholarships</h3>
+            <div class="ac-list">
+              <div class="ac-item">
+                <div class="ac-name">Maroon Research Scholarship</div>
+                <div class="ac-detail">$37,000 · UChicago · 2024–25</div>
+              </div>
+              <div class="ac-item">
+                <div class="ac-name">Maroon Research Scholarship</div>
+                <div class="ac-detail">$30,000 · UChicago · 2023–24</div>
+              </div>
+              <div class="ac-item">
+                <div class="ac-name">Social Sciences Promise Scholarship</div>
+                <div class="ac-detail">$7,000 · UChicago · 2023–24</div>
+              </div>
+              <div class="ac-item">
+                <div class="ac-name">National Overseas Scholarship</div>
+                <div class="ac-detail">Govt. of India · Awarded to 75 students nationally</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ac-block">
+            <h3 class="subsection-title">Certifications</h3>
+            <div class="ac-list">
+              <div class="ac-item">
+                <div class="ac-name">MicroMasters: Statistics &amp; Data Science</div>
+                <div class="ac-detail">MITx</div>
+              </div>
+              <div class="ac-item">
+                <div class="ac-name">Professional Certificate: Data Science</div>
+                <div class="ac-detail">HarvardX</div>
+              </div>
+              <div class="ac-item">
+                <div class="ac-name">Data Science Math Skills</div>
+                <div class="ac-detail">Johns Hopkins University</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-block reveal">
+          <div class="contact-content">
+            <span class="section-label">Say hello</span>
+            <h2 class="section-title">Let's connect</h2>
+            <p class="contact-text">
+              I'm actively exploring Data Scientist, Applied ML, and Analytics Engineering roles.
+              If you're hiring or just want to talk about data — drop me a line.
+            </p>
+            <div class="contact-actions">
+              <a class="btn-primary" href="mailto:pgajbhiye2405@gmail.com"><i class="fa-solid fa-envelope"></i> pgajbhiye2405@gmail.com</a>
+              <a class="btn-outline" href="tel:+17732363270"><i class="fa-solid fa-phone"></i> (773) 236-3270</a>
+            </div>
+            <div class="contact-links">
+              <a href="https://linkedin.com/in/pritam-gajbhiye" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+              <a href="https://github.com/Pritam0705" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="assets/Pritam_Gajbhiye_Resume.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i> Resume</a>
+            </div>
+          </div>
+          <div class="contact-decoration">
+            <div class="deco-circle deco-1"></div>
+            <div class="deco-circle deco-2"></div>
+            <div class="deco-circle deco-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="logo-mark small">PG</span>
+        <span>&copy; <span id="footerYear"></span> Pritam Gajbhiye &middot; Chicago, IL</span>
+      </div>
+      <div class="footer-right">
+        <a href="https://linkedin.com/in/pritam-gajbhiye" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Pritam0705" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:pgajbhiye2405@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
