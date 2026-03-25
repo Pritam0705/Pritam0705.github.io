@@ -320,9 +320,9 @@ img { max-width: 100%; display: block; }
   bottom: 50%;
   flex-direction: column-reverse;
 }
-.h-timeline-item.above .h-connector { order: 1; }
-.h-timeline-item.above .h-dot { order: 2; }
 .h-timeline-item.above .h-card { order: 0; }
+.h-timeline-item.above .h-dot { order: 2; }
+.h-timeline-item.above .h-connector { order: 1; }
 
 .h-timeline-item.below {
   top: 50%;
