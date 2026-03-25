@@ -1,76 +1,117 @@
-// Theme toggle with localStorage
-const themeToggle = document.getElementById("themeToggle");
-const menuBtn = document.getElementById("menuBtn");
-const mobileNav = document.getElementById("mobileNav");
-const yearEl = document.getElementById("year");
-const progress = document.getElementById("progress");
+// ============================================================
+//  PRITAM GAJBHIYE — PORTFOLIO JS
+// ============================================================
 
-yearEl.textContent = String(new Date().getFullYear());
+(function () {
+  "use strict";
 
-function setTheme(theme) {
-  document.documentElement.setAttribute("data-theme", theme);
-  localStorage.setItem("theme", theme);
-  const icon = themeToggle.querySelector("i");
-  if (theme === "light") {
-    icon.className = "fa-solid fa-sun";
-  } else {
-    icon.className = "fa-solid fa-moon";
+  // Elements
+  const themeToggle = document.getElementById("themeToggle");
+  const themeIcon = document.getElementById("themeIcon");
+  const mobileToggle = document.getElementById("mobileToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const scrollProgress = document.getElementById("scrollProgress");
+  const footerYear = document.getElementById("footerYear");
+
+  // Footer year
+  if (footerYear) footerYear.textContent = new Date().getFullYear();
+
+  // ---- Theme ----
+  function setTheme(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("pg-theme", theme);
+    if (themeIcon) {
+      themeIcon.className = theme === "light" ? "fa-solid fa-sun" : "fa-solid fa-moon";
+    }
   }
-}
 
-const saved = localStorage.getItem("theme");
-setTheme(saved || "dark");
+  const savedTheme = localStorage.getItem("pg-theme") || "dark";
+  setTheme(savedTheme);
 
-themeToggle.addEventListener("click", () => {
-  const current = document.documentElement.getAttribute("data-theme");
-  setTheme(current === "dark" ? "light" : "dark");
-});
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      const current = document.documentElement.getAttribute("data-theme");
+      setTheme(current === "dark" ? "light" : "dark");
+    });
+  }
 
-// Mobile menu
-menuBtn.addEventListener("click", () => {
-  mobileNav.classList.toggle("open");
-  mobileNav.setAttribute("aria-hidden", mobileNav.classList.contains("open") ? "false" : "true");
-});
+  // ---- Mobile menu ----
+  if (mobileToggle && mobileMenu) {
+    mobileToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("open");
+    });
+    mobileMenu.querySelectorAll("a").forEach((a) => {
+      a.addEventListener("click", () => mobileMenu.classList.remove("open"));
+    });
+  }
 
-document.querySelectorAll(".m-link").forEach(a => {
-  a.addEventListener("click", () => {
-    mobileNav.classList.remove("open");
-    mobileNav.setAttribute("aria-hidden", "true");
-  });
-});
+  // ---- Scroll progress ----
+  function updateProgress() {
+    const docEl = document.documentElement;
+    const scrollTop = docEl.scrollTop;
+    const scrollHeight = docEl.scrollHeight - docEl.clientHeight;
+    const pct = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+    if (scrollProgress) scrollProgress.style.width = pct + "%";
+  }
+  window.addEventListener("scroll", updateProgress, { passive: true });
 
-// Reveal on scroll
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) e.target.classList.add("show");
-  });
-}, { threshold: 0.12 });
+  // ---- Reveal on scroll ----
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+  document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
 
-document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+  // ---- Project filters ----
+  const filterChips = document.querySelectorAll(".filter-chip");
+  const projectCards = document.querySelectorAll("#projectsGrid .project-card");
 
-// Scroll progress bar
-window.addEventListener("scroll", () => {
-  const doc = document.documentElement;
-  const scrollTop = doc.scrollTop;
-  const scrollHeight = doc.scrollHeight - doc.clientHeight;
-  const pct = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
-  progress.style.width = `${pct}%`;
-});
+  filterChips.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      filterChips.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      const filter = btn.dataset.filter;
 
-// Project filters
-const chips = document.querySelectorAll(".chip");
-const cards = document.querySelectorAll("#projectGrid .card");
-
-chips.forEach(btn => {
-  btn.addEventListener("click", () => {
-    chips.forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-    const filter = btn.dataset.filter;
-
-    cards.forEach(card => {
-      const tags = (card.dataset.tags || "").split(" ");
-      const show = filter === "all" || tags.includes(filter);
-      card.style.display = show ? "block" : "none";
+      projectCards.forEach((card) => {
+        const tags = (card.dataset.tags || "").split(" ");
+        const show = filter === "all" || tags.includes(filter);
+        card.style.display = show ? "grid" : "none";
+        // Re-trigger reveal for visible cards
+        if (show && !card.classList.contains("show")) {
+          card.classList.remove("show");
+          void card.offsetWidth;
+          revealObserver.observe(card);
+        }
+      });
     });
   });
-});
+
+  // ---- Active nav link highlight on scroll ----
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  function highlightNav() {
+    const scrollY = window.scrollY + 120;
+    sections.forEach((section) => {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      const id = section.getAttribute("id");
+      if (scrollY >= top && scrollY < top + height) {
+        navLinks.forEach((link) => {
+          link.style.color = "";
+          link.style.background = "";
+          if (link.getAttribute("href") === "#" + id) {
+            link.style.color = "var(--accent)";
+          }
+        });
+      }
+    });
+  }
+  window.addEventListener("scroll", highlightNav, { passive: true });
+})();
