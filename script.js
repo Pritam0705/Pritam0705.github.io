@@ -25,13 +25,13 @@
     }
   }
 
-  const savedTheme = localStorage.getItem("pg-theme") || "dark";
+  const savedTheme = localStorage.getItem("pg-theme") || "light";
   setTheme(savedTheme);
 
   if (themeToggle) {
     themeToggle.addEventListener("click", () => {
       const current = document.documentElement.getAttribute("data-theme");
-      setTheme(current === "dark" ? "light" : "dark");
+      setTheme(current === "light" ? "dark" : "light");
     });
   }
 
